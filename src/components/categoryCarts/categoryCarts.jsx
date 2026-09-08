@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import allProducts from "../../components/data/productsd";
-import "./CategoryCarts.css";
-
+import "./categoryCarts.css";
 
 const products = allProducts.filter((p) => p.category === "casual");
 
