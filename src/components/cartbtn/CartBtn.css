@@ -1,0 +1,19 @@
+.cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cart-btn button{
+     border-radius: 20px;
+     background-color: #fff;
+     padding: 13px 55px;
+     border: none;
+     border: 1px solid #bbbaba;
+     transition: 0.4s ease;
+}
+.cart-btn button:hover{
+    color: #fff;
+    background-color: #000;
+}

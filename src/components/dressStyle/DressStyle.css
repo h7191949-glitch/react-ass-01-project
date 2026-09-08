@@ -1,0 +1,185 @@
+.dress-style-section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #f1f1f1;
+  border-radius: 24px;
+}
+
+.dress-style-section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.dress-style-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 155px 155px;
+  gap: 12px;
+}
+
+
+.dress-style-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 11px;
+}
+
+
+.dress-style-card h3 {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+
+.dress-style-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+}
+
+
+.casual {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+
+.formal {
+  grid-column: 3 / 6;
+  grid-row: 1;
+}
+
+
+.party {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+
+.gym {
+  grid-column: 4 / 6;
+  grid-row: 2;
+}
+
+
+.casual img {
+  object-position: 75% center;
+  transition: 0.4s ease;
+}
+
+.casual img:hover{
+  transform: scale(1.1);
+}
+
+.formal img {
+  object-position: 60% center;
+  transition: 0.4s ease;
+}
+.formal img:hover{
+  transform: scale(1.1);
+}
+
+.party img {
+  object-position: 75% center;
+  transition: 0.4s ease-in-out;
+}
+.party img:hover{
+  transform: scale(1.1);
+}
+
+.gym img {
+  object-position: 60% center;
+  transition: 0.4s ease-out;
+}
+.gym img:hover{
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+  .dress-style-section {
+    width: 94%;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .dress-style-section h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .dress-style-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 140px 140px;
+    gap: 10px;
+  }
+
+  .dress-style-card h3 {
+    top: 12px;
+    left: 15px;
+    font-size: 18px;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+
+  .dress-style-section {
+    width: 94%;
+    padding: 25px 12px;
+    border-radius: 18px;
+  }
+
+  .dress-style-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dress-style-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 160px;
+    gap: 10px;
+  }
+
+  .casual {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .formal {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .party {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .gym {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .dress-style-card h3 {
+    top: 12px;
+    left: 14px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,173 @@
+.new-arrivals {
+    width: 100%;
+    min-width: 0;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.new-arrivals h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.new-arrivals .products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 22px;
+    box-sizing: border-box;
+}
+
+.new-arrivals .product-card {
+    width: 100%;
+    min-width: 0;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+/* Image container: fixed square, image is always fully visible and
+   centered inside it — never stretched or cropped, regardless of the
+   photo's real aspect ratio. */
+.new-arrivals .product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.new-arrivals .product-img img {
+    max-width: 88%;
+    max-height: 88%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.new-arrivals .product-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 6px 0 3px;
+    color: #111;
+}
+
+.new-arrivals .product-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 16px;
+}
+
+.new-arrivals .stars {
+    color: #ffc107;
+    font-size: 13px;
+    letter-spacing: -2px;
+}
+
+.new-arrivals .rating-number {
+    font-size: 9px;
+    color: #555;
+}
+
+.new-arrivals .product-price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3px;
+    flex-wrap: wrap;
+}
+
+.new-arrivals .current-price {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
+}
+
+.new-arrivals .old-price {
+    font-size: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.new-arrivals .discount {
+    font-size: 7px;
+    color: #ff5555;
+    background: #ffe5e5;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+/* View All button */
+.new-arrivals .view-all-btn {
+    display: block;
+    width: fit-content;
+    margin: 26px auto 0;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #111;
+    background: transparent;
+    color: #111;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.new-arrivals .view-all-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .new-arrivals .products-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .new-arrivals .products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .new-arrivals .products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px 8px;
+    }
+
+    .new-arrivals .product-card h3 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .new-arrivals .stars {
+        font-size: 11px;
+    }
+
+    .new-arrivals .rating-number {
+        font-size: 8px;
+    }
+
+    .new-arrivals .current-price {
+        font-size: 11px;
+    }
+
+    .new-arrivals .old-price {
+        font-size: 9px;
+    }
+}

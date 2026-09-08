@@ -1,0 +1,223 @@
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+  padding: 35px 40px 10px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+
+.footer-main {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+
+.footer-about h2 {
+  font-size: 38px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.footer-about p {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.social-icons a {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+}
+
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column h3 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
+
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 25px auto 0;
+  padding-top: 12px;
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 10px;
+}
+
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 10px;
+}
+
+.payment-card {
+  width: 28px;
+  height: 17px;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.visa {
+  color: #1434cb;
+  font-style: italic;
+  font-size: 10px;
+}
+
+
+.mastercard {
+  position: relative;
+  font-size: 10px;
+}
+
+.mastercard span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mastercard span:first-child {
+  background: #e41e25;
+  left: 7px;
+}
+
+.mastercard span:last-child {
+  background: #f7a600;
+  left: 12px;
+}
+
+
+.paypal {
+  color: #003087;
+}
+
+.paypal span {
+  color: #009cde;
+}
+
+
+.apple {
+  font-size: 10px;
+}
+
+
+.google {
+  font-size: 9px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 30px 25px 12px;
+  }
+
+  .footer-main {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .footer-column h3 {
+    font-size: 10px;
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .footer {
+    padding: 30px 20px 15px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .footer-about h2 {
+    font-size: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .payment-methods {
+    justify-content: center;
+  }
+
+}
