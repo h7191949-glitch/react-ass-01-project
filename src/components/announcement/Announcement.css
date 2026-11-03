@@ -63,3 +63,9 @@
         font-size: 11px;
     }
 }
+.announcement-signup {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
