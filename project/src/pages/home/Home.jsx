@@ -6,7 +6,6 @@ import Announcement from "../../components/announcement/announcement";
 import Navbar from "../../components/navbar/Navbar";
 import Hero from "../../components/herosection/Hero";
 import NewArrivals from "../../components/newarrivals/NewArrivals";
-import CartBtn from "../../components/cartbtn/CartBtn";
 import DressStyle from "../../components/dressStyle/DressStyle";
 import HappyCustomers from "../../components/customer/Customer";
 import LastestOffer from "../../components/lastestoffer/LatestOffer";
@@ -110,6 +109,7 @@ export default function Home() {
             <NewArrivals
               title="MATCHING PRODUCTS"
               products={filteredProducts}
+              maxProducts={null}
             />
           ) : (
             <div className="no-search-results">
@@ -128,16 +128,14 @@ export default function Home() {
           <NewArrivals
             title="NEW ARRIVALS"
             products={newArrivalProducts}
+            viewAllLink="/products?category=new-arrivals"
           />
-
-          <CartBtn />
 
           <NewArrivals
             title="TOP SELLING"
             products={topSellingProducts}
+            viewAllLink="/products?category=top-selling"
           />
-
-          <CartBtn />
 
           {categories.map((category) => (
             <NewArrivals
@@ -150,6 +148,7 @@ export default function Home() {
               products={products.filter(
                 (product) => product.category === category
               )}
+              viewAllLink={`/products?category=${encodeURIComponent(category)}`}
             />
           ))}
 

@@ -8,6 +8,7 @@ import PlaceOrder from "./pages/checkout/PlaceOrder";
 import ProductPage from "./pages/productDetails/ProductDe";
 import Signup from "./pages/signup/signup";
 import Casual from "./pages/casualpage/CasualPage";
+import ProductsPage from "./pages/products/ProductsPage";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/place-order" element={<PlaceOrder />} />
       <Route path="/product/:productId" element={<ProductPage />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/products" element={<ProductsPage />} />
     </Routes>
   );
 }

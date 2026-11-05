@@ -130,6 +130,26 @@
     color: #fff;
 }
 
+.all-products-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.all-products-page .catalog-count {
+    margin: 0 0 8px;
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+}
+
+.all-products-page .catalog-status {
+    padding: 32px 16px;
+    color: #666;
+    text-align: center;
+}
+
 @media (max-width: 900px) {
     .new-arrivals .products-container {
         grid-template-columns: repeat(3, minmax(0, 1fr));

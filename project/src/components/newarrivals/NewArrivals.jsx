@@ -80,15 +80,20 @@ function ProductCard({ product }) {
 export default function NewArrivals({
   title,
   products = [],
-  viewAllLink = "#",
+  viewAllLink,
+  maxProducts = 8,
+  showViewAll = Boolean(viewAllLink),
 }) {
+  const visibleProducts =
+    maxProducts === null ? products : products.slice(0, maxProducts);
+
   return (
     <section className="new-arrivals">
       <h2>{title}</h2>
 
       <div className="products-container">
-        {products.length > 0 ? (
-          products.map((product) => (
+        {visibleProducts.length > 0 ? (
+          visibleProducts.map((product) => (
             <ProductCard
               key={product.id}
               product={product}
@@ -98,6 +103,12 @@ export default function NewArrivals({
           <p>No products available.</p>
         )}
       </div>
+
+      {showViewAll && products.length > 0 && (
+        <Link to={viewAllLink} className="view-all-btn">
+          See All
+        </Link>
+      )}
     </section>
   );
 }
