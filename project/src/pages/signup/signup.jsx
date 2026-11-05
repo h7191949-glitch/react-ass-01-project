@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../components/navbar/Navbar";
 import Announcement from "../../components/announcement/announcement";
 import Footer from "../../components/footer/Footer";
-import "./Signup.css";
+import "./signup.css";
 
 const API_URL = "http://localhost:5000/api/customers";
 
