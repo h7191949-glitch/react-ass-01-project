@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import staticProducts from "../../components/data/productsd";
 import "../../components/productdetails/ProductDetails.css";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "http://https://e-commerce-back-end-hknq-git-main-acma18.vercel.app//api/products";
 
 function ProductDetails() {
   const { productId } = useParams();

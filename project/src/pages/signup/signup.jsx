@@ -5,7 +5,7 @@ import Announcement from "../../components/announcement/announcement";
 import Footer from "../../components/footer/Footer";
 import "./signup.css";
 
-const API_URL = "http://localhost:5000/api/customers";
+const API_URL = "http://https://e-commerce-back-end-hknq-git-main-acma18.vercel.app//api/customers";
 
 export default function Signup() {
   const navigate = useNavigate();

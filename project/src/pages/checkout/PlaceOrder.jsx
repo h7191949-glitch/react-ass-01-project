@@ -8,7 +8,7 @@ import LastestOffer from "../../components/lastestoffer/LatestOffer";
 import Footer from "../../components/footer/Footer";
 import "./PlaceOrder.css";
 
-const API_URL = "http://localhost:5000/api/orders";
+const API_URL = "http://https://e-commerce-back-end-hknq-git-main-acma18.vercel.app//api/orders";
 
 function PlaceOrder() {
   const navigate = useNavigate();
