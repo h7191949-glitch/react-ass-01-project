@@ -11,7 +11,7 @@ import HappyCustomers from "../../components/customer/Customer";
 import LastestOffer from "../../components/lastestoffer/LatestOffer";
 import Footer from "../../components/footer/Footer";
 
-const API_URL = "http://https://e-commerce-back-end-hknq-git-main-acma18.vercel.app//api/products";
+const API_URL = "https://e-commerce-back-end-hknq.vercel.app/api/products";
 
 export default function Home() {
   const [products, setProducts] = useState([]);

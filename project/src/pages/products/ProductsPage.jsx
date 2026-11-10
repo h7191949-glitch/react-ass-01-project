@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import NewArrivals from "../../components/newarrivals/NewArrivals";
 
-const API_URL = "http://https://e-commerce-back-end-hknq-git-main-acma18.vercel.app//api/products";
+const API_URL = "https://e-commerce-back-end-hknq.vercel.app/api/products";
 
 export default function ProductsPage() {
   const [searchParams] = useSearchParams();
